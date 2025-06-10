@@ -1,0 +1,42 @@
+Here’s the description of the three images you provided, which together illustrate the working of your Blood Management System website:
+
+Image 1: Homepage + Blood Group Search Functionality
+  Description:
+	•	This is the homepage of your Blood Management System.
+	•	The page displays a welcoming message and explains the platform’s purpose — to help college students find blood donors in emergencies.
+	•	There’s a “Find a Donor” button that leads to the donor search section.
+	•	Below, users can:
+	•	Select a blood group from a dropdown list.
+	•	Click the Search button.
+	•	Once searched, the system shows available donors who match the selected blood group.
+
+Functionality Highlighted:
+	•	User Interface for blood group search.
+	•	Blood donor filtering by selected blood group.
+	•	Dynamic display of matching donor list.
+
+Image 2: Donor Search Results Display
+  Description:
+	•	This shows the result after selecting a blood group (e.g., A+) and clicking Search.
+	•	The system displays a table of donors with details such as:
+	•	Name
+	•	Blood Group
+	•	Contact Number
+	•	Location info (Hostel or Day Scholar)
+	•	This helps recipients easily identify and choose suitable donors.
+
+Functionality Highlighted:
+	•	Real-time donor list rendering.
+	•	Display of full donor info from the database.
+
+Image 3: Email Notification to DonorDescription:
+	•	This is a blood request email sent to a donor (e.g., to Deep).
+	•	The email informs the donor that a user (e.g., bhardwajhardik012@gmail.com) is in urgent need of a specific blood group (e.g., AB+).
+	•	The email contains:
+	•	“Accept” and “Reject” buttons to respond directly.
+	•	A polite message of gratitude and urgency.
+
+Functionality Highlighted:
+	•	Automated email notifications to donors using NodeMailer.
+	•	Direct accept/reject options embedded within the email.
+	•	Real-time integration of database triggers with donor communication.
