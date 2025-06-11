@@ -95,13 +95,45 @@ To develop a website where:
 | GitHub       | Version control and collaboration               |
 
 ---
+## 🧩 System Architecture
+The Blood Management System is structured in a modular way to support smooth donor-recipient interaction, secure data handling, and efficient request processing.
 
-## System Architecture
+1. User Layer
+	•	Accessible via browser
+	•	Users: Donors, Recipients, Admins
+	•	Actions:
+	•	Login / Register
+	•	Search and Request Blood (Recipient)
+	•	Manage Requests (Donor/Admin)
 
-```mermaid
-graph LR
-    A[User (Donor / Recipient / Admin)] --> B[Login / Register Page]
-    B --> C[Role-Based Dashboard]
-    C --> D[MongoDB Database]
-    C --> E[Email Notification System (Nodemailer)]
-    C --> F[Request Management / Availability Updates]
+2. Frontend Layer
+	•	Built with: HTML, CSS, JavaScript
+	•	Role-based UI:
+	•	Unified interface post-login
+	•	Dynamic content based on role (admin vs donor/recipient)
+
+3. Backend Layer
+	•	Framework: Node.js with Express.js
+	•	API Routes:
+	•	/api/signup, /api/login, /api/verify-otp
+	•	/api/students (donor data)
+	•	/api/request-blood, /api/my-requests
+	•	/api/add-admin, /api/accept-request, /api/reject-request
+
+4. Authentication System
+	•	Using JWT (JSON Web Token) for session and access control
+	•	Role-based access: only admins can add/edit/delete donors
+
+5. Database Layer
+	•	Database: MongoDB
+	•	Collections:
+	•	Users (Donors, Recipients, Admins)
+	•	Students (Donor-specific data)
+	•	Requests (Blood requests with status)
+
+6. Email Service
+	•	Handled via Nodemailer
+	•	Purpose:
+	•	Send OTP during signup
+	•	Donor confirmation mails
+	•	Blood request emails with Accept/Reject options
