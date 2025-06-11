@@ -96,12 +96,12 @@ To develop a website where:
 
 ---
 
-##  System Architecture
+## System Architecture
 
 ```mermaid
 graph LR
-A[User (Donor/Recipient/Admin)] --> B[Login/Register Page]
-B --> C[Role-Based Dashboard]
-C --> D[MongoDB Database]
-C --> E[Email Notification System (Nodemailer)]
-C --> F[Request Management / Availability Updates]
+    A[User (Donor / Recipient / Admin)] --> B[Login / Register Page]
+    B --> C[Role-Based Dashboard]
+    C --> D[MongoDB Database]
+    C --> E[Email Notification System (Nodemailer)]
+    C --> F[Request Management / Availability Updates]
